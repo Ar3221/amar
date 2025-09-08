@@ -38,19 +38,6 @@ export default function DirectorsSection() {
               </CardContent>
             </Card>
             
-            <Card className="text-center hover-scale fade-in-up" data-testid="director-card-2">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Award className="w-12 h-12 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-2">Director Name</h3>
-                <p className="text-accent font-semibold mb-4">Executive Director</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Please provide director information including name, position, and brief background.
-                </p>
-              </CardContent>
-            </Card>
-            
             <Card className="text-center hover-scale fade-in-up" data-testid="director-card-3">
               <CardContent className="p-8">
                 <div className="w-24 h-24 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">

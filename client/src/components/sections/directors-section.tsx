@@ -1,6 +1,7 @@
 import { User, Award, Target } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import directorImage from "@assets/image_1757348545859.png";
 
 export default function DirectorsSection() {
   const { ref } = useScrollAnimation();
@@ -22,8 +23,12 @@ export default function DirectorsSection() {
             {/* Director placeholders - replace with actual director information */}
             <Card className="text-center hover-scale fade-in-up" data-testid="director-card-1">
               <CardContent className="p-8">
-                <div className="w-24 h-24 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
-                  <User className="w-12 h-12 text-primary" />
+                <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
+                  <img 
+                    src={directorImage} 
+                    alt="Director" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-primary mb-2">Director Name</h3>
                 <p className="text-accent font-semibold mb-4">Managing Director</p>

@@ -96,14 +96,6 @@ export default function QualitySection() {
                   </div>
                 ))}
               </div>
-              
-              <Button 
-                className="bg-primary text-primary-foreground hover:bg-primary/90"
-                data-testid="button-download-certificates"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                Download Certificates
-              </Button>
             </div>
           </div>
         </div>

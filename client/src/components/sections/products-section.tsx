@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import safetyMatchesImage from "@assets/image_1757346783410.png";
+import woodenSplintsImage from "@assets/image_1757346932821.png";
 
 export default function ProductsSection() {
   const { ref } = useScrollAnimation();
@@ -78,8 +79,8 @@ export default function ProductsSection() {
             {/* Wooden Match Splints */}
             <Card className="overflow-hidden hover-scale fade-in-up" data-testid="product-wooden-splints">
               <img 
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
-                alt="Wooden match splints manufacturing" 
+                src={woodenSplintsImage} 
+                alt="High-quality wooden match splints" 
                 className="w-full h-64 object-cover"
               />
               <CardContent className="p-8">

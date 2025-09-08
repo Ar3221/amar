@@ -2,6 +2,7 @@ import { Flame, TreePine, Shield, Microscope, Truck, Headphones, CheckCircle, Ma
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import safetyMatchesImage from "@assets/image_1757346783410.png";
 
 export default function ProductsSection() {
   const { ref } = useScrollAnimation();
@@ -30,8 +31,8 @@ export default function ProductsSection() {
             {/* Safety Matches */}
             <Card className="overflow-hidden hover-scale fade-in-up" data-testid="product-safety-matches">
               <img 
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
-                alt="Safety matches product line" 
+                src={safetyMatchesImage} 
+                alt="Amar safety matches product boxes" 
                 className="w-full h-64 object-cover"
               />
               <CardContent className="p-8">

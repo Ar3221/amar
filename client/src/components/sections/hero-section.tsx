@@ -44,7 +44,7 @@ export default function HeroSection() {
               variant="outline"
               size="lg"
               onClick={() => scrollToSection('contact')}
-              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg"
+              className="border-2 border-white text-blue-500 hover:bg-white hover:text-primary px-8 py-4 text-lg"
               data-testid="button-get-quote"
             >
               📄 Get Quote

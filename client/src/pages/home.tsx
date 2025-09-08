@@ -5,6 +5,7 @@ import AboutSection from "@/components/sections/about-section";
 import ProductsSection from "@/components/sections/products-section";
 import ManufacturingSection from "@/components/sections/manufacturing-section";
 import QualitySection from "@/components/sections/quality-section";
+import DirectorsSection from "@/components/sections/directors-section";
 import ContactSection from "@/components/sections/contact-section";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <ProductsSection />
         <ManufacturingSection />
         <QualitySection />
+        <DirectorsSection />
         <ContactSection />
       </main>
       <Footer />

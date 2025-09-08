@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import heroBackgroundImage from "@assets/image_1757347389785.png";
 
 export default function HeroSection() {
   const { ref } = useScrollAnimation();
@@ -17,7 +18,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 parallax" 
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080")',
+          backgroundImage: `url(${heroBackgroundImage})`,
           opacity: 0.3
         }}
       ></div>

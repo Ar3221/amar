@@ -30,10 +30,10 @@ export default function DirectorsSection() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-2">Director Name</h3>
+                <h3 className="text-xl font-bold text-primary mb-2">Anuj Kumar</h3>
                 <p className="text-accent font-semibold mb-4">Managing Director</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Please provide director information including name, position, and brief background.
+                  Anuj Kumar Garg is the Managing Director at Amar Splints Private Limited, where he has played a pivotal role in the company's growth since its incorporation in 2011. Under his leadership, Amar Splints has evolved from a modest manufacturing unit into one of India's largest, most prominent exporters of safety match splints.
                 </p>
               </CardContent>
             </Card>

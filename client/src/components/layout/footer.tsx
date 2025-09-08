@@ -1,4 +1,5 @@
 import { Flame, Phone, Mail, MapPin } from "lucide-react";
+import logoImage from "@assets/image_1757345603971.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -15,8 +16,12 @@ export default function Footer() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <Flame className="text-accent-foreground text-xl" />
+                <div className="w-16 h-12 flex items-center justify-center">
+                  <img 
+                    src={logoImage} 
+                    alt="Amar Splints Logo" 
+                    className="h-12 w-auto object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Amar Splints</h3>

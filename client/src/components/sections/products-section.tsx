@@ -42,7 +42,7 @@ export default function ProductsSection() {
                   <h3 className="text-2xl font-bold text-primary">Safety Matches</h3>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Premium quality safety matches manufactured using high-grade chemicals and wooden splints. 
+                  Premium quality safety matches manufactured for renowned brands like Homelight, Aim, Ship, Tekka, and Mangaldeep Dhoop. 
                   Available in various box sizes and bulk packaging options.
                 </p>
                 

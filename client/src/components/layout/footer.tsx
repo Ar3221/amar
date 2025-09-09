@@ -134,7 +134,15 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-3" />
-                  <span data-testid="footer-address">Shamli, UP 247776</span>
+                  <a 
+                    href="https://www.google.com/maps?rlz=1C1VDKB_enIN1141IN1141&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYQDIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPNIBBzc5NmowajeoAgCwAgA&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KemB3_pHLAw5MU6VzXkaZxhP&daddr=Village.Kandela,+Plot+.No.1033+Industrial+estate+kairana+panipat,+road,+Shamli,+Uttar+Pradesh+247776"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-accent transition-colors cursor-pointer"
+                    data-testid="footer-address"
+                  >
+                    Shamli, UP 247776
+                  </a>
                 </div>
               </div>
             </div>

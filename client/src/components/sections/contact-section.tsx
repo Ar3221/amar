@@ -208,11 +208,16 @@ export default function ContactSection() {
                     <MapPin className="w-6 h-6 text-accent mr-4 mt-1" />
                     <div>
                       <h4 className="font-semibold mb-2">Factory Address</h4>
-                      <p className="text-muted-foreground">
+                      <a 
+                        href="https://www.google.com/maps?rlz=1C1VDKB_enIN1141IN1141&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYQDIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPNIBBzc5NmowajeoAgCwAgA&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KemB3_pHLAw5MU6VzXkaZxhP&daddr=Village.Kandela,+Plot+.No.1033+Industrial+estate+kairana+panipat,+road,+Shamli,+Uttar+Pradesh+247776"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                      >
                         Village Kandela, Plot No.1033<br />
                         Industrial Estate Kairana Panipat Road<br />
                         Shamli, Uttar Pradesh 247776
-                      </p>
+                      </a>
                     </div>
                   </div>
                   
@@ -255,20 +260,28 @@ export default function ContactSection() {
                 </div>
               </div>
               
-              {/* Map Placeholder */}
-              <Card className="bg-muted text-center p-8" data-testid="contact-map">
-                <div className="text-4xl text-accent mb-4">🗺️</div>
-                <h4 className="font-semibold mb-2">Location Map</h4>
-                <p className="text-muted-foreground mb-4">Interactive map integration</p>
-                <Button 
-                  variant="outline"
-                  onClick={() => window.open(`https://maps.google.com/?q=Village+Kandela+Shamli+Uttar+Pradesh+247776`, '_blank')}
-                  data-testid="button-get-directions"
-                >
-                  <Navigation className="w-4 h-4 mr-2" />
-                  Get Directions
-                </Button>
-              </Card>
+              {/* Location Section */}
+              <div className="mt-8">
+                <Card className="bg-muted/50">
+                  <CardContent className="p-6">
+                    <div className="text-center">
+                      <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
+                      <h4 className="text-xl font-bold text-primary mb-2">Visit Our Factory</h4>
+                      <p className="text-muted-foreground mb-4">
+                        Located in the heart of Uttar Pradesh's industrial zone
+                      </p>
+                      <Button 
+                        onClick={() => window.open('https://www.google.com/maps?rlz=1C1VDKB_enIN1141IN1141&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYQDIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPNIBBzc5NmowajeoAgCwAgA&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KemB3_pHLAw5MU6VzXkaZxhP&daddr=Village.Kandela,+Plot+.No.1033+Industrial+estate+kairana+panipat,+road,+Shamli,+Uttar+Pradesh+247776', '_blank')}
+                        className="w-full sm:w-auto"
+                        data-testid="get-directions-button"
+                      >
+                        <Navigation className="w-4 h-4 mr-2" />
+                        Get Directions on Google Maps
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>

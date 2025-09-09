@@ -1,5 +1,8 @@
+
+
 import { Award, Leaf } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import manufacturingImage from "@assets/manufacturing-splints-production.png";
 
 export default function AboutSection() {
   const { ref } = useScrollAnimation();
@@ -13,16 +16,16 @@ export default function AboutSection() {
               About Amar Splints Private Limited
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto fade-in-up" data-testid="about-subtitle">
-              Established as a leading manufacturer of safety matches and wooden match splints, 
-              we have been serving industries across India with unwavering commitment to quality and excellence.
+              Founded in 1992 and officially incorporated in 2011, Amar Splints Private Limited is a leading manufacturer 
+              of safety matches and match splints, serving both domestic and international markets.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="fade-in-up">
               <img 
-                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Modern manufacturing facility" 
+                src={manufacturingImage}
+                alt="Amar Splints manufacturing facility - wooden splints production line" 
                 className="rounded-xl shadow-2xl w-full h-auto hover-scale"
                 data-testid="about-image"
               />
@@ -31,24 +34,26 @@ export default function AboutSection() {
             <div className="fade-in-up">
               <h3 className="text-3xl font-bold text-primary mb-6" data-testid="about-story-title">Our Story</h3>
               <p className="text-lg text-muted-foreground mb-6" data-testid="about-description-1">
-                Located in the heart of Uttar Pradesh's industrial belt, Amar Splints Private Limited has grown 
-                from a small-scale operation to one of India's most trusted manufacturers of safety matches and wooden match splints.
+                Over the past three decades, Amar Splints has perfected the art of manufacturing match splints and matchboxes 
+                that meet the highest standards, earning the trust of industry leaders like ITC Limited and serving renowned brands 
+                such as Homelight, Aim, Ship, Tekka, and Mangaldeep Dhoop across North India.
               </p>
               <p className="text-lg text-muted-foreground mb-8" data-testid="about-description-2">
-                Our state-of-the-art facility in Village Kandela combines traditional craftsmanship with modern 
-                manufacturing techniques, ensuring every product meets the highest standards of quality and safety.
+                Our mission focuses on strategic direct wood sourcing, uplifting rural communities, strengthening agriculturists, 
+                and enhancing India's export sector. We are committed to promoting economic self-reliance through local employment 
+                and sustainable manufacturing practices.
               </p>
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-6 bg-muted rounded-lg" data-testid="about-certification">
                   <Award className="w-8 h-8 text-accent mb-3 mx-auto" />
-                  <h4 className="font-semibold mb-2">ISO Certified</h4>
-                  <p className="text-sm text-muted-foreground">Quality Management System</p>
+                  <h4 className="font-semibold mb-2">30+ Years</h4>
+                  <p className="text-sm text-muted-foreground">Manufacturing Excellence</p>
                 </div>
                 <div className="text-center p-6 bg-muted rounded-lg" data-testid="about-eco-friendly">
                   <Leaf className="w-8 h-8 text-green-600 mb-3 mx-auto" />
-                  <h4 className="font-semibold mb-2">Eco-Friendly</h4>
-                  <p className="text-sm text-muted-foreground">Sustainable Manufacturing</p>
+                  <h4 className="font-semibold mb-2">Global Export</h4>
+                  <p className="text-sm text-muted-foreground">Africa, Middle East, Latin America</p>
                 </div>
               </div>
             </div>

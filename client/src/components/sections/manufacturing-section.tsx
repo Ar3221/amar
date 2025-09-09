@@ -7,13 +7,13 @@ export default function ManufacturingSection() {
   const processSteps = [
     {
       number: 1,
-      title: "Raw Material Selection",
-      description: "Premium quality wood sourced from sustainable forests, ensuring consistent grain and moisture content."
+      title: "Strategic Wood Sourcing",
+      description: "Direct wood procurement from sustainable sources, supporting rural communities and strengthening agriculturists."
     },
     {
       number: 2,
-      title: "Precision Cutting",
-      description: "Advanced machinery cuts wooden splints to exact specifications with minimal waste and maximum efficiency."
+      title: "Advanced Manufacturing",
+      description: "15 fully automatic lines for wooden splints and high-tech Swedish/Korean machines for safety matchbox production."
     },
     {
       number: 3,
@@ -22,8 +22,8 @@ export default function ManufacturingSection() {
     },
     {
       number: 4,
-      title: "Quality Testing",
-      description: "Comprehensive quality control testing ensures every batch meets our stringent quality standards."
+      title: "Quality Assurance",
+      description: "Rigorous quality control ensures products are well-polished, white in color, fully carburized, and moisture-controlled."
     }
   ];
 
@@ -36,8 +36,8 @@ export default function ManufacturingSection() {
               Manufacturing Excellence
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto fade-in-up" data-testid="manufacturing-subtitle">
-              Our state-of-the-art manufacturing process combines traditional expertise with modern technology 
-              to deliver products of unmatched quality and consistency.
+              Our 300,000 square feet facility features high-tech Swedish and Korean machines and 15 fully automatic lines for wooden splints, 
+              ensuring unmatched quality and consistency in safety match production.
             </p>
           </div>
           
@@ -71,23 +71,23 @@ export default function ManufacturingSection() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-8 bg-muted rounded-xl fade-in-up" data-testid="capability-production">
               <ServerCog className="w-12 h-12 text-primary mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-4">Production Capacity</h3>
-              <p className="text-3xl font-bold text-accent mb-2">1M+</p>
-              <p className="text-muted-foreground">Matches per day</p>
+              <h3 className="text-xl font-semibold mb-4">Production Lines</h3>
+              <p className="text-3xl font-bold text-accent mb-2">15+</p>
+              <p className="text-muted-foreground">Fully automatic lines</p>
             </div>
             
             <div className="text-center p-8 bg-muted rounded-xl fade-in-up" data-testid="capability-workforce">
               <Users className="w-12 h-12 text-primary mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-4">Skilled Workforce</h3>
-              <p className="text-3xl font-bold text-accent mb-2">100+</p>
-              <p className="text-muted-foreground">Trained professionals</p>
+              <h3 className="text-xl font-semibold mb-4">Export Markets</h3>
+              <p className="text-3xl font-bold text-accent mb-2">4+</p>
+              <p className="text-muted-foreground">Continents served</p>
             </div>
             
             <div className="text-center p-8 bg-muted rounded-xl fade-in-up" data-testid="capability-facility">
               <Factory className="w-12 h-12 text-primary mb-4 mx-auto" />
               <h3 className="text-xl font-semibold mb-4">Facility Size</h3>
-              <p className="text-3xl font-bold text-accent mb-2">50,000</p>
-              <p className="text-muted-foreground">Sq ft manufacturing area</p>
+              <p className="text-3xl font-bold text-accent mb-2">300,000</p>
+              <p className="text-muted-foreground">Sq ft warehouse space</p>
             </div>
           </div>
         </div>

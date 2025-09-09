@@ -1,4 +1,4 @@
-import { User, Award, Target } from "lucide-react";
+import { User, Award, Target, Linkedin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import directorImage from "@assets/image_1757348545859.png";
@@ -19,9 +19,9 @@ export default function DirectorsSection() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex justify-center">
             {/* Director placeholders - replace with actual director information */}
-            <Card className="text-center hover-scale fade-in-up" data-testid="director-card-1">
+            <Card className="text-center hover-scale fade-in-up max-w-md" data-testid="director-card-1">
               <CardContent className="p-8">
                 <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
                   <img 
@@ -30,24 +30,20 @@ export default function DirectorsSection() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-2">Anuj Kumar</h3>
-                <p className="text-accent font-semibold mb-4">Managing Director</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Anuj Kumar Garg is the Managing Director at Amar Splints Private Limited, where he has played a pivotal role in the company's growth since its incorporation in 2011. Under his leadership, Amar Splints has evolved from a modest manufacturing unit into one of India's largest, most prominent exporters of safety match splints.
+                <h3 className="text-xl font-bold text-primary mb-2">Anuj Kumar Garg</h3>
+                <p className="text-accent font-semibold mb-4">Managing Director & Chairman</p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Mr. Anuj Kumar Garg serves as the Managing Director and Chairman of Amar Splints Private Limited. He also holds the prestigious position of Chairman of International Affairs at the Indian Industries Association (IIA). Under his visionary leadership, Amar Splints has grown from a small-scale operation founded in 1992 to become one of India's leading manufacturers and exporters, serving markets across Africa, Middle East, and Latin America.
                 </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center hover-scale fade-in-up" data-testid="director-card-3">
-              <CardContent className="p-8">
-                <div className="w-24 h-24 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Target className="w-12 h-12 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-2">Director Name</h3>
-                <p className="text-accent font-semibold mb-4">Technical Director</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Please provide director information including name, position, and brief background.
-                </p>
+                <a 
+                  href="https://www.linkedin.com/in/anuj-kumar-garg-33220528a/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  <span className="text-sm font-medium">LinkedIn Profile</span>
+                </a>
               </CardContent>
             </Card>
           </div>

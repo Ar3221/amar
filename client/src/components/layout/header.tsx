@@ -30,6 +30,8 @@ export default function Header() {
     { label: "About", href: "about" },
     { label: "Products", href: "products" },
     { label: "Manufacturing", href: "manufacturing" },
+    { label: "Production", href: "production-process" },
+    { label: "Mission", href: "mission-vision" },
     { label: "Directors", href: "directors" },
     { label: "Contact", href: "contact" },
   ];
@@ -48,12 +50,12 @@ export default function Header() {
             </div>
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {navigationItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-foreground hover:text-primary transition-colors whitespace-nowrap text-xs px-1"
                 data-testid={`nav-${item.href}`}
               >
                 {item.label}
